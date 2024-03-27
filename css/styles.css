@@ -114,9 +114,9 @@ ul {
 /* -----section_1-----*/
 
 .background-title {
-    width: 1440px;
+    width: 1158px;
     height: 600px;
-    padding: 188px 472px;
+    padding: 188px 316px 48px 316px;
 } 
 
 .title {
@@ -127,7 +127,6 @@ ul {
     text-align: center;
     color: #fff;
     max-width: 496px;
-    width: 496px;
     margin: 0 auto;
     padding-bottom: 64px;
 }
@@ -143,6 +142,8 @@ ul {
     letter-spacing: 0.04em;
     border-radius: 4px;
     padding: 16px 32px;
+    margin: 0 auto;
+    display: flex;
 }
 
 .btn:hover, .btn:focus {
