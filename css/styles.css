@@ -4,6 +4,7 @@ body {
     font-family: "Roboto", sans-serif;
     color: #434455;
     background-color: #FFFFFF;
+    margin-top: 24px;
 }
 
 p,
@@ -36,12 +37,16 @@ ul {
 }
 
 
-
 /* -----header----- */
 
 /* .header-nav {} */
 
 /* .header-soc-list {} */
+
+.header{ border-bottom: 1px solid #e7e9fc;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
 
 .header-logo {
     font-family: "Raleway", sans-serif;
@@ -282,6 +287,7 @@ color: #2e2f42;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
+    padding-bottom: 100px;
 }
 
 .footer-logo-color {
