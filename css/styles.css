@@ -22,7 +22,7 @@ a {
 }
 
 ul {
-    list-style: none;
+    list-style-type: none;
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 0;
@@ -51,6 +51,9 @@ ul {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-right: 76px;
 }
 
 .logo {
@@ -73,6 +76,9 @@ ul {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    padding-top: 24px;
+    padding-right: 40px;
+    padding-bottom: 24px;
 }
 
 .list:hover, .list:focus {
@@ -101,14 +107,17 @@ ul {
 
 
 
-
 /* -----main----- */
 
 /* .main{} */
 
 /* -----section_1-----*/
 
-/* .background-title{} */
+.background-title {
+    width: 1440px;
+    height: 600px;
+    padding: 188px 472px;
+} 
 
 .title {
     font-weight: 700;
@@ -118,7 +127,9 @@ ul {
     text-align: center;
     color: #fff;
     max-width: 496px;
+    width: 496px;
     margin: 0 auto;
+    padding-bottom: 64px;
 }
 
 .btn {
@@ -130,6 +141,8 @@ ul {
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    border-radius: 4px;
+    padding: 16px 32px;
 }
 
 .btn:hover, .btn:focus {
