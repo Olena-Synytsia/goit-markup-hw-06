@@ -41,8 +41,12 @@ ul {
 
 
 .container-header-line {
-    padding-bottom: 24px;
     display: flex;
+    align-items: center;
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
 }
 
 .nav-address {
@@ -63,10 +67,13 @@ ul {
 
 .header-soc-list {
     display: flex;
+    gap: 40px;
 }
 
 .header { 
     border-bottom: 1px solid #e7e9fc;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 
@@ -78,6 +85,7 @@ ul {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    margin-right: 76px;
 }
 
 .logo {
@@ -93,6 +101,7 @@ ul {
 .address {
     font-style: normal;
     display: flex;
+    padding-right: 40px;
 }
 
 .header-soc-item {
@@ -101,6 +110,7 @@ ul {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    padding-right: 40px;
 }
 
 .list:hover, .list:focus {
