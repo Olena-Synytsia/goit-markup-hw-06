@@ -26,6 +26,11 @@ ul {
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
 }
 
 .container {
@@ -51,14 +56,6 @@ ul {
 
 .nav-address {
     display: flex;
-    align-items: center;
-    margin-right: auto;
-}
-
-.address-item {
-    display: flex;
-    align-items: center;
-    margin-right: auto;
 }
 
 .header-nav { 
@@ -67,7 +64,16 @@ ul {
 
 .header-soc-list {
     display: flex;
+    padding-right: 332px;
     gap: 40px;
+}
+
+.header-soc-item {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
 }
 
 .header { 
@@ -100,17 +106,13 @@ ul {
 
 .address {
     font-style: normal;
-    display: flex;
-    padding-right: 40px;
+
 }
 
-.header-soc-item {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #2e2f42;
-    padding-right: 40px;
+.address-item {
+    display: flex;
+    margin-right: auto;
+    gap: 40px;
 }
 
 .list:hover, .list:focus {
@@ -137,11 +139,15 @@ ul {
     background-color: #2e2f42;
 }
 
+.section {
+padding-top: 120px;
+padding-bottom: 120px;
+}
 
 
 /* -----main----- */
 
-/* .main{} */
+
 
 /* -----section_1-----*/
 
@@ -185,6 +191,8 @@ ul {
 
 
 /* -----section_2-----*/
+
+
 .visually-hidden {
     clip-path: inset(50%);
     height: 1px;
@@ -194,9 +202,15 @@ ul {
     width: 1px;
 }
 
-.container-about{
-    padding-top: 120px;
-    padding-bottom: 120px;
+/* .container-about{} */
+
+.wrap-about {
+    display: flex;
+    gap: 24px;
+}
+
+.about-item {
+width: calc((100% - 3*24px) / 4);
 }
 
 .title-about {
@@ -205,6 +219,7 @@ ul {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    padding-bottom: 8px;
 }
 
 .about-text {
@@ -223,10 +238,8 @@ ul {
 
 /* -----section_3-----*/
 
-.container-our-team {
-    padding-top: 111px;
-    padding-bottom: 129px;
-}
+
+/* .container-our-team {}*/
 
 .title-team {
     font-weight: 700;
@@ -236,11 +249,26 @@ ul {
     text-align: center;
     color: #2e2f42;
     text-transform: capitalize;
+    padding-bottom: 72px;
+}
+
+.team-list {
+    display: flex;
+    gap: 24px;
 }
 
 .team-item {
     background: #fff;
+    width: calc((100% - 3*24px) / 4);
 }
+
+/* .team-item-img 
+{padding-bottom: 32px;}*/
+
+.wrap-team {
+    padding: 32px 16px;
+}
+
 
 .team-item-name {
     font-weight: 500;
@@ -250,6 +278,7 @@ ul {
     text-align: center;
     color: #2e2f42;
     text-transform: capitalize;
+    padding-bottom: 8px;
 }
 
 .team-item-job {
@@ -264,10 +293,7 @@ ul {
 
 /* -----section_4-----*/
 
-.container-our-portfolio{
-    padding-top: 111px;
-    padding-bottom: 120px;
-}
+/* .container-our-portfolio{}*/
 
 .title-our-portfolio {
     font-weight: 700;
