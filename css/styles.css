@@ -54,6 +54,12 @@ img {
     display: flex;
 }
 
+.header-soc-list {
+    display: flex;
+    padding-right: 332px;
+    gap: 40px;
+}
+
 .header-soc-item {
     font-weight: 500;
     font-size: 16px;
@@ -65,8 +71,6 @@ img {
 .link {
     display: flex;
     padding: 24px 0;
-    padding-right: 332px;
-    gap: 40px;
 }
 
 .header { 
