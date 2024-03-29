@@ -52,7 +52,6 @@ img {
 .header-nav { 
     display: flex;
     align-items: center; 
-    padding: 24px 0;
 }
 
 .header-soc-list {
@@ -82,6 +81,7 @@ img {
     text-transform: uppercase;
     color: #4d5ae5;
     margin-right: 76px;
+    padding: 24px 0;
 }
 
 .logo {
