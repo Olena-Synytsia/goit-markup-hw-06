@@ -47,19 +47,12 @@ img {
 .container-header-line {
     display: flex;
     align-items: center;
-    width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-}
-
-.nav-address {
-    display: flex;
 }
 
 .header-nav { 
     display: flex;
-    align-items: center;
+    align-items: center; 
+    padding: 24px 0;
 }
 
 .header-soc-list {
@@ -89,7 +82,6 @@ img {
     text-transform: uppercase;
     color: #4d5ae5;
     margin-right: 76px;
-    padding: 24px 0;
 }
 
 .logo {
@@ -133,10 +125,6 @@ img {
     color: #404bbf;
 }
 
-.background {
-    background-color: #2e2f42;
-}
-
 .section {
 padding-top: 120px;
 padding-bottom: 120px;
@@ -148,11 +136,17 @@ padding-bottom: 120px;
 
 /* -----section_1-----*/
 
+.background {
+    background-color: #2e2f42;
+    padding-top: 188px;
+    padding-bottom: 188px;
+}
 
 .background-title {
-    width: 1158px;
     height: 600px;
-    padding: 188px 316px 48px 316px;
+    padding-right: 316px;
+    padding-bottom: 48px;
+    padding-left: 316px;
 } 
 
 .title {
