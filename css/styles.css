@@ -154,6 +154,7 @@ img {
     max-width: 496px;
     height: 120px;
     margin: 0 auto;
+    margin-bottom: 48px;
 }
 
 .btn {
@@ -172,7 +173,6 @@ img {
     min-width: 169px;
     height: 56px;
     border: none;
-    margin-top: 48px;
 }
 
 .btn:hover, .btn:focus {
