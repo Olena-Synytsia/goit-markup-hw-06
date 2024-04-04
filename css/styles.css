@@ -62,6 +62,9 @@ img {
     display: flex;
     gap: 40px;
     align-items: center;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-right: auto;
 }
 
 .header-soc-item {
@@ -72,6 +75,26 @@ img {
     color: #2e2f42;
     padding: 24px 0;
     display: block;
+}
+
+.current {
+    position: relative;
+    color: #404bbf;
+}
+
+.header-soc-item.current::after {
+    content: "";
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
+}
+
+.header-soc-item:hover {
+    color: #404bbf;
 }
 
 .header { 
@@ -146,14 +169,12 @@ img {
     max-width: 1440px;
     padding-top: 188px;
     padding-bottom: 188px;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-fon.png);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-fon.jpg);
     background-repeat: no-repeat;
     background-position: center;
     block-size: cover;
     margin: 0 auto;
 }
-
-
 
 .title {
     font-weight: 700;
@@ -214,6 +235,10 @@ img {
 
 .about-item {
 width: calc((100% - 3*24px) / 4);
+}
+
+.icons-about {
+
 }
 
 .title-about {
@@ -291,6 +316,21 @@ width: calc((100% - 3*24px) / 4);
     color: #434455;
 }
 
+.icon-list {
+
+}
+
+.icon-item {
+    
+}
+
+.icon-link {
+
+}
+
+.icon-icon {
+    /* fill: #404BBF */
+}
 
 /* -----section_4-----*/
 
