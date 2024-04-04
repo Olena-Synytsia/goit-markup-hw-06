@@ -31,6 +31,8 @@ ul {
 
 img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .container {
@@ -39,6 +41,7 @@ img {
     padding-right: 15px;
     margin: 0 auto;
 }
+
 
 
 /* -----header----- */
@@ -140,9 +143,17 @@ img {
 .background {
     background-color: #2e2f42;
     height: 600px;
+    max-width: 1440px;
     padding-top: 188px;
     padding-bottom: 188px;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-fon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    block-size: cover;
+    margin: 0 auto;
 }
+
+
 
 .title {
     font-weight: 700;
