@@ -23,10 +23,7 @@ a {
 
 ul {
     list-style-type: none;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: 0;
-    padding-left: 0;
+    margin: 0;
 }
 
 img {
@@ -293,7 +290,7 @@ width: calc((100% - 3*24px) / 4);
 /* .team-item-img */
 
 .wrap-team {
-    padding: 32px 0;
+    padding: 32px 16px;
 }
 
 .team-item-name {
@@ -314,22 +311,32 @@ width: calc((100% - 3*24px) / 4);
     letter-spacing: 0.02em;
     text-align: center;
     color: #434455;
+    margin-bottom: 8px;
 }
 
 .icon-list {
-
+    display: flex;
+    gap: 24px;
+    padding: 0;
 }
 
 .icon-item {
-    
+    width: 40px;
+    height: 40px;
 }
 
 .icon-link {
-
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .icon-icon {
-    /* fill: #404BBF */
+    fill: #FFFFFF;
 }
 
 /* -----section_4-----*/
@@ -389,7 +396,20 @@ margin-bottom: 8px;
 .background-footer {
     background: #2e2f42;
     padding: 100px 0;
+    display: flex;
+    align-items: center;
 }
+
+.container-footer {
+    margin-right: 120px;
+}
+
+.footer-page {
+    text-align: left;
+    display: flex;
+    align-items: baseline;
+}
+
 
 .text-footer { 
     font-weight: 400;
@@ -422,3 +442,14 @@ margin-bottom: 8px;
     margin-bottom: 16px;
 }
 
+.text-footer-media {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+}
+
+.media {
+}
