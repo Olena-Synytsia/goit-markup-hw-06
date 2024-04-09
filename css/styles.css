@@ -524,9 +524,8 @@ margin-bottom: 8px;
     gap: 16px;
 }
 
-
-/* .media {
-} */
+.media {
+} 
 
 .link-footer:hover,
 .link-footer:focus {
