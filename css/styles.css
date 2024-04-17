@@ -39,7 +39,6 @@ img {
     margin: 0 auto;
     padding-left: 16px;
     padding-right: 16px;
-
 }
 
 .section {
@@ -67,8 +66,8 @@ img {
 }
 
 
-
 /* -----header----- */
+
 
 .header {
     border-bottom: 1px solid #e7e9fc;
@@ -76,6 +75,8 @@ img {
     0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 1px 6px rgba(46, 47, 66, 0.08);
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
 .container-header-line {
@@ -161,6 +162,11 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+    .header {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    
     .header-nav {
         display: flex;
     }
@@ -226,6 +232,7 @@ img {
 
 
 /* -----section_1-----*/
+
 
 .background {
     height: 432px;
@@ -326,69 +333,27 @@ img {
 
 .wrap-about {
     max-width: 288px;
-    margin: 0 auto;
-}
-
-.about-item {
-
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
 }
 
 .wrap-icon {
-    border: 1px solid #8e8f99;
-    border-radius: 4px;
-    height: 112px;
-    background: #f4f4fd;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 8px;
     display: none;
 }
 
 .title-about {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
+    text-align: center;
     color: #2e2f42;
     margin-bottom: 8px;
 }
 
-@media screen and (min-width: 768px) {
-    .wrap-about {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 24px 72px;
-        max-width: 736px;
-        }
-    
-    .about-item {
-        width: calc((100% - 24px) / 2);
-        }
-    
-    .wrap-icon {
-        display: none;
-        }
-}
-
-@media screen and (min-width: 1158px) {
-    .wrap-about {
-        display: flex;
-        gap: 24px;
-        max-width: 1128px;
-    }
-
-    .about-item {
-        width: calc((100% - 3*24px) / 4);
-        
-        }
-
-    .wrap-icon {
-        display: flex;
-    }
-}
-
 .about-text {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -399,11 +364,62 @@ img {
     background-color: #f4f4fd;
 }
 
+@media screen and (min-width: 768px) {
+    .wrap-about {
+        max-width: 736px;
+        flex-direction: row;
+        gap: 24px 72px;
+    }
+
+    .about-item {
+        width: calc((100% - 24px) / 2);    }
+
+    .title-about {
+        text-align: start;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .wrap-about {
+        max-width: 1128px;
+        gap: 24px;
+    }
+
+    .about-item {
+        width: calc((100% - 3*24px) / 4);
+    }
+
+    .wrap-icon {
+        display: flex;
+        border: 1px solid #8e8f99;
+        border-radius: 4px;
+        height: 112px;
+        background: #f4f4fd;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 8px;
+    }
+
+    .title-about {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+    }
+
+    .about-text {
+        font-weight: 400;
+    }
+}
+
 
 /* -----section_3-----*/
 
 
 /* .container-our-team {}*/
+
+.our-team-container {
+    width: 264px;
+}
 
 .title-team {
     font-weight: 700;
@@ -423,7 +439,6 @@ img {
 
 .team-item {
     background: #fff;
-    width: calc((100% - 3*24px) / 4);
     border-radius: 0px 0px 4px 4px;
     box-shadow:
     0 2px 1px 0 rgba(46, 47, 66, 0.08),
@@ -431,10 +446,16 @@ img {
     0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
+
+
 /* .team-item-img {}*/
 
+/* .background-our-team {
+    margin: 0 auto;
+} */
+
 .wrap-team {
-    padding: 32px 0;
+    padding: 32px 16px;
 }
 
 .team-item-name {
@@ -487,6 +508,30 @@ img {
 
 .icon-icon {
     fill: #f4f4fd;
+}
+
+@media screen and (min-width: 768px) {
+    .our-team-container {
+        width: 528px;
+    }
+
+    .team-list {
+    }
+
+    .team-item {
+        width: calc((100% - 1*24px) / 2);
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    .our-team-container {
+            width: 1158px;
+        }
+
+    .team-item {
+        width: calc((100% - 3*24px) / 4);
+    }
+
 }
 
 
