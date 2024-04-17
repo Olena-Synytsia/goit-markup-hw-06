@@ -536,7 +536,6 @@ img {
 /* -----section_4-----*/
 
 
-
 .title-our-portfolio {
     font-weight: 700;
     font-size: 36px;
@@ -563,6 +562,10 @@ line-height: 1.2;
 letter-spacing: 0.02em;
 color: #2e2f42;
 margin-bottom: 8px;
+}
+
+.post-item {
+    box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
 .post .item-p {
@@ -629,12 +632,11 @@ margin-bottom: 8px;
 
 @media screen and (min-width: 1158px) {
     .post-item {
+        box-shadow: none;
         width: calc((100% - 24px*2) / 3);
         transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
-
-/* .about-item {} */
 
 
 /*-----footer-----*/
@@ -642,13 +644,15 @@ margin-bottom: 8px;
 
 .background-footer {
     background: #2e2f42;
-    padding: 100px 0;
+    padding: 96px 0;
     display: flex;
     align-items: center;
+    
 }
 
-.container-footer {
-    margin-right: 120px;
+.footer-page {
+    flex-direction: column;
+    gap: 72px;
 }
 
 .footer-page {
@@ -657,13 +661,17 @@ margin-bottom: 8px;
     align-items: baseline;
 }
 
+.container-footer {
+    text-align: center;
+}
+
 .text-footer { 
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
-    width: 264px;
+    text-align: left;
 }
 
 .footer-logo-color {
@@ -709,6 +717,29 @@ margin-bottom: 8px;
 .link-footer:focus {
     background-color: #31d0aa;
 }
+
+/* @media screen and (min-width: 768px) {
+    .footer-page {}
+}
+
+@media screen and (min-width: 1158px) {
+    .background-footer {
+        padding: 100px 0;
+    }
+
+    .footer-page {
+        flex-direction: row;
+        
+    }
+
+    .container-footer {
+        margin-right: 120px;
+    }
+
+    .text-footer {
+        width: 264px;
+    }
+} */
 
 
 /* -----footer modal----- */
