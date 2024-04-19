@@ -173,7 +173,6 @@ img {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
 @media screen and (min-width: 768px) {
     .header {
         padding-top: 0;
@@ -1087,7 +1086,6 @@ margin-bottom: 8px;
     fill: transparent;
 }
 
-
 .modal-check:checked+.checkbox-text .check-span {
     border-radius: 2px;
     background-color: #404bbf;
@@ -1148,6 +1146,7 @@ margin-bottom: 8px;
 }
 
 /* -----mobil-menu----- */
+
 
 .mobile-menu-list {
     position: fixed;
